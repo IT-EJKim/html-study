@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 목록을 가진 텍스트 입력</title>
+</head>
+<body>
+<h3>선택 목록을 가진 텍스트 입력</h3>
+<hr>
+<form action="">
+나라 : <input type="text" list="countries"><br>
+        <datalist id="countries">
+            <option value="가나">가나</option>
+            <option value="스위스">스위스</option>
+            <option value="브라질">브라질</option>
+        </datalist>
+보고싶은것 : <input type="text" list="what"><br>
+            <datalist id="what">
+                <option value="산">산</option>
+                <option value="바다">바다</option>
+                <option value="도시">도시</option>
+            </datalist>
+</form>
+
+<br><br>
+
+<div>
+    <h3>버튼을 만들자</h3>
+    <hr>
+    <form action="#">
+        검색 : <input type="text" size="10" value="">
+        <input type="button" value="Q1" onclick="alert('input 태그 type:button 방식');">
+        <button type="button" onclick="alert('button 태그 type:button 방식');">Q2</button>
+        <br>
+        submit 버튼 : <input type="submit" value="전송1" onclick="alert('input태그 submit방식');">
+        <button type="submit" onclick="alert('button태그 submit방식');">전송2</button>
+        <br>
+        reset 버튼 : <input type="reset" value="리셋1" onclick="alert('input태그 reset방식');">
+        <button type="reset" onclick="alert('button태그 reset방식');">리셋2</button>
+        <br>
+        image 버튼 : <input type="image" src="./peng.jpg" onclick="alert('input태그 img방식');">
+        <button type="button"><img src="./peng.jpg" alt="펭수1" onclick="alert('button태그 img방식');"></button>
+    </form>
+</div>
+</body>
+</html>
